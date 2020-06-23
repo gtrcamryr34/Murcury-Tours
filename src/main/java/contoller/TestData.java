@@ -5,6 +5,9 @@ public class TestData {
 
         public static final String FIRSTNAME = "Peter";
         public static final String LASTNAME = "Parker";
+        public static final String LOGINUSERNAME = "umerrr";
+        public static final String LOGINPASS = "testtest";
+
         public static final String PHONE = "8564495555";
         public static final String EMAIL = "peter.parker@spiderman.com";
 

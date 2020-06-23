@@ -12,6 +12,9 @@ public class LandingPage extends BasePage {
 
     private By register = By.linkText("REGISTER");
     private By registerPageVerify = By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/img");
+    private By userName = By.name("userName");
+    private By passWord = By.name("password");
+    private By signInBTN = By.name("login");
 
 
     public LandingPage(WebDriver driver) {
@@ -29,6 +32,15 @@ public class LandingPage extends BasePage {
     public void verifyRegisterPage() {
         verify(registerPageVerify);
     }
+
+    public void enterUsername(String username) {
+        type(username, userName );}
+
+    public void enterPassword(String password) {
+        type(password, passWord);}
+
+    public void clickSignIn() {
+        click(signInBTN);}
 
 
 

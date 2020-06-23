@@ -16,7 +16,10 @@ public class RegisterPage extends BasePage {
     private By city = By.name("city");
     private By state = By.name("state");
     private By postalCode = By.name("postalCode");
-    private By country = By.name("country");
+    private By countryDropdown = By.name("country");
+
+
+
 
     private By userName = By.name("email");
     private By password = By.name("password");
@@ -45,6 +48,10 @@ public class RegisterPage extends BasePage {
         type(City, city);
         type(State, state);
         type(postalcode, postalCode);
+    }
+
+    public void selectCountryDropdown(String country) {
+        dropDownSelect(country, countryDropdown);
     }
 
     public void enterNewCredentials(String username, String passWord, String confirmpassword) {

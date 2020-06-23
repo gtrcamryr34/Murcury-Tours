@@ -21,6 +21,7 @@ public class SignUp extends TestUtilities {
         registerPage.enterPersonalInfo(TestData.FIRSTNAME, TestData.LASTNAME, TestData.PHONE, TestData.EMAIL);
         //Fifth Step Enter Address
         registerPage.enterAddress(TestData.STREET1, TestData.STREET2, TestData.CITY, TestData.STATE, TestData.POSTALCODE);
+        registerPage.selectCountryDropdown(TestData.COUNTRY);
         //Sixth Step: Enter New Credentials
         registerPage.enterNewCredentials(TestData.USERNAME, TestData.PASSWORD, TestData.PASSWORD);
         //Seventh Step: Click the Submit Button
@@ -28,7 +29,6 @@ public class SignUp extends TestUtilities {
         //Eighth Step: Verify User is Created
         registerPage.verifySuccess();
     }
-
     @AfterTest
     public void CloseBrowser() {
         driver.close();

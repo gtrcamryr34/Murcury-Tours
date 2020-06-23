@@ -13,9 +13,9 @@ public class TestData {
         public static final String CITY = "Queens";
         public static final String STATE = "New York";
         public static final String POSTALCODE = "11902";
-        public static final String Country = "UNITED STATES";
+        public static final String COUNTRY = "MOROCCO";
 
-        public static final String USERNAME = "PeterParker";
+        public static final String USERNAME = "clarkkent";
         public static final String PASSWORD = "maryjaneily";
 
 

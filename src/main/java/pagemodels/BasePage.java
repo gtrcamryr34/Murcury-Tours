@@ -3,6 +3,8 @@ package pagemodels;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
 
 public class BasePage {
 
@@ -26,6 +28,11 @@ public class BasePage {
 
     protected void type(String text, By locator) {
         find(locator).sendKeys(text);
+    }
+
+    protected void dropDownSelect(String text, By locator) {
+        Select select = new Select(find(locator));
+        select.selectByVisibleText(text);
     }
 
     protected void verify(By locator) {

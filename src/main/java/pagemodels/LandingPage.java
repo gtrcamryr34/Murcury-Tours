@@ -12,7 +12,7 @@ public class LandingPage extends BasePage {
 
     private By loginLink = By.linkText("Login");
 
-    private By myAccountDropDown = By.xpath("/html/body/div[1]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
+    private By myAccountDropDown = By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
 
 
 

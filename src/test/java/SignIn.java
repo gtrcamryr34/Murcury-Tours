@@ -22,6 +22,8 @@ public class SignIn extends TestUtilities {
         loginPage.verifyLoginTitle();
         loginPage.loginCredentials(TestData.USERNAME, TestData.PASSWORD);
 
+
+
         accountPage.verifyPage();
     }
 }

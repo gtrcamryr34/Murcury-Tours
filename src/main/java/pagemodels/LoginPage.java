@@ -13,6 +13,7 @@ public class LoginPage extends BasePage {
 
     private By userName = By.name("username");
     private By passWord = By.name("password");
+    private By submitButton = By.xpath("/html/body/div[2]/div[1]/section/div/div[1]/div[2]/form/button");
 
     private By rememberMe = By.name("remember");
 
@@ -24,7 +25,7 @@ public class LoginPage extends BasePage {
     public void loginCredentials(String username, String password){
         type(username, userName);
         type(password, passWord);
-        submit(passWord);
+        click(submitButton);
     }
 
 

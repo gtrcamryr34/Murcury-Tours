@@ -6,7 +6,6 @@ import org.testng.Assert;
 
 public class RegisterPage extends BasePage {
 
-
     public RegisterPage(WebDriver driver) {
         super(driver);
     }

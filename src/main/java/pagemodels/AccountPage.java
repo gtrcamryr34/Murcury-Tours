@@ -12,6 +12,4 @@ public class AccountPage extends BasePage {
         driver.getPageSource().contains("Hi, Demo User");
         System.out.println(driver.getTitle());
     }
-
-
 }

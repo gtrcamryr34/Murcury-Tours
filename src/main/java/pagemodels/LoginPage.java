@@ -27,13 +27,4 @@ public class LoginPage extends BasePage {
         type(password, passWord);
         click(submitButton);
     }
-
-
-
-
-
-
-
-
-
 }

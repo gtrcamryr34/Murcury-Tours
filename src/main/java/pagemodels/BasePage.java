@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-
 public class BasePage {
 
     protected WebDriver driver;
@@ -42,6 +41,4 @@ public class BasePage {
     protected void submit(By locator) {
         find(locator).submit();
     }
-
-
 }

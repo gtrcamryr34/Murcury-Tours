@@ -7,7 +7,6 @@ import pagemodels.LoginPage;
 
 public class SignIn extends TestUtilities {
 
-
     @Test
     public void signtest() throws Exception {
         LandingPage landingPage = new LandingPage(driver);

@@ -8,15 +8,8 @@ public class AccountPage extends BasePage {
         super(driver);
     }
 
-    private By homebtn = By.xpath("//*[@id=\"mobileMenuMain\"]/nav/ul[1]/li/a");
-
     public void verifyPage(){
         driver.getPageSource().contains("Hi, Demo User");
         System.out.println(driver.getTitle());
-    }
-
-    public void clickHome() {
-        waitUntilClick(homebtn, 10);
-        click(homebtn);
     }
 }

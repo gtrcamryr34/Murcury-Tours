@@ -7,11 +7,21 @@ public class BrowserFactory {
 
     private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
-    public WebDriver createDriver() throws Exception {
+    public WebDriver createDriver() {
         //NOTE : Creating Chrome driver
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        driver.set(new ChromeDriver());
-
-        return driver.get();
+     if (getOSType().equals("Windows 10")) {
+         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+         driver.set(new ChromeDriver());
+         return driver.get();
+     } else{
+         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+         driver.set(new ChromeDriver());
+         return driver.get();
+     }
+    }
+    public String getOSType() {
+        String  os  = System.getProperty("os.name");
+        System.out.println("I am using this OS: "+os);
+        return os;
     }
 }

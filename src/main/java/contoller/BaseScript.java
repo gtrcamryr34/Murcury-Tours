@@ -10,7 +10,7 @@ public class BaseScript {
     @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception{
         BrowserFactory factory = new BrowserFactory();
-        factory.createDriver();
+        driver = factory.createDriver();
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

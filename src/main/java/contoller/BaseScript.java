@@ -17,6 +17,4 @@ public class BaseScript {
             e.printStackTrace();
         }
     }
-
-
 }

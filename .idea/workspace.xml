@@ -42,6 +42,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7add16fd-3c53-402c-b042-e8c6f0820e31" name="Default Changelist" comment="Fixed Mac vs Windows chromedriver">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contoller/BaseScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contoller/BaseScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contoller/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contoller/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

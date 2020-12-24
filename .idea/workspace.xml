@@ -41,7 +41,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7add16fd-3c53-402c-b042-e8c6f0820e31" name="Default Changelist" comment="Fixed Mac vs Windows chromedriver">
-      <change beforePath="$PROJECT_DIR$/Murcury-Tours.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -12,7 +12,7 @@ public class BaseScript {
     public static final String jenkins = "jenkins";
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp(@Optional(browserStack)String browser) throws Exception {
+    public void setUp(@Optional(chrome)String browser) throws Exception {
         BrowserFactory factory = new BrowserFactory(browser);
         driver = factory.createDriver();
         // This sleep here is for Umer only

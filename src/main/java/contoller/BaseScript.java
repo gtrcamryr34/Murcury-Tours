@@ -1,8 +1,10 @@
 package contoller;
 
+import com.beust.jcommander.Parameter;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class BaseScript {
 
@@ -11,6 +13,7 @@ public class BaseScript {
     public static final String browserStack = "remote";
     public static final String jenkins = "jenkins";
 
+    @Parameters({ "browser" })
     @BeforeMethod(alwaysRun = true)
     public void setUp(@Optional(chrome)String browser) throws Exception {
         BrowserFactory factory = new BrowserFactory(browser);

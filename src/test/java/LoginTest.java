@@ -10,6 +10,7 @@ public class LoginTest extends BaseScript {
 
     @Test
     public void loginTest() throws Exception {
+        //Initializing the classes so we can use its methods and functions
         LandingPage landingPage = new LandingPage(driver);
         LoginPage loginPage = new LoginPage(driver);
         AccountPage accountPage = new AccountPage(driver);

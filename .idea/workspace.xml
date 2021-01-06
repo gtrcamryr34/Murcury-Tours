@@ -41,7 +41,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7add16fd-3c53-402c-b042-e8c6f0820e31" name="Default Changelist" comment="Fixed Mac vs Windows chromedriver">
-      <change beforePath="$PROJECT_DIR$/Murcury-Tours.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagemodels/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/contoller/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contoller/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagemodels/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagemodels/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagemodels/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagemodels/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagemodels/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagemodels/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +73,9 @@
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1iZRmPK7pWWYHVcJ6Ve0xoBpHUM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,6 +84,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -82,6 +93,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\meaht\Documents\Project\Murcury-Tours\src\main\resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -93,19 +105,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.loginTest">
-    <configuration name="BookFlight.bookFlightToDubai" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Murcury-Tours" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookFlight" />
-      <option name="METHOD_NAME" value="bookFlightToDubai" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SignUpTest.signUpTest">
     <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Murcury-Tours" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,6 +123,18 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SignIn" />
       <option name="METHOD_NAME" value="purchasePS5" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Murcury-Tours" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SignUpTest" />
+      <option name="METHOD_NAME" value="signUpTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SignUpTest.signUpTest" />
         <item itemvalue="TestNG.LoginTest.loginTest" />
         <item itemvalue="TestNG.Walmart.purchasePS5" />
         <item itemvalue="TestNG.Walmart" />
         <item itemvalue="TestNG.SignIn.purchasePS5" />
-        <item itemvalue="TestNG.BookFlight.bookFlightToDubai" />
       </list>
     </recent_temporary>
   </component>

@@ -34,6 +34,9 @@ public class ProfilePageTest extends BaseScript {
         profilePage.verifiedWelcomeText();
         //Step 8: Verify the date of the Profile Page
         profilePage.verifiedDate();
+        //step 9: click invoice
+        profilePage.submitInvoice();
+
 
 
 

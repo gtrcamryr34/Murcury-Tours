@@ -65,14 +65,11 @@ public class SignUpTest extends BaseScript {
         signUpPage.signUp(TestData.FIRSTNAME, TestData.LASTNAME,
                 TestData.MOBILENUMBER, TestData.USERNAME, TestData.PASSWORD,
                 TestData.CONFIRMPASSWORD);
-
     }
 
-    /*@AfterTest
+    @AfterTest
     public void closeBrowser(){
     driver.close();
    }
-
-     */
 
 }

@@ -8,4 +8,10 @@
             <class name="LoginTest" />
         </classes>
     </test>
+
+    <test name="SignUpTest">
+        <classes>
+            <class name="SignUpTest" />
+        </classes>
+    </test>
   </suite>

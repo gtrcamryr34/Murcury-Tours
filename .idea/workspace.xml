@@ -41,10 +41,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7add16fd-3c53-402c-b042-e8c6f0820e31" name="Default Changelist" comment="Fixed Mac vs Windows chromedriver">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagemodels/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagemodels/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagemodels/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProfilePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />

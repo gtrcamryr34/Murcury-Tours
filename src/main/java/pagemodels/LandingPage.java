@@ -17,6 +17,7 @@ public class LandingPage extends BasePage {
 
     private By myAccountDropDown =  By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
     private By loginLink = By.linkText("Login");
+    private By signUpLink = By.linkText("Sign Up");
 
     public void openHomePage() {
         openPage(pageUrl);
@@ -31,5 +32,7 @@ public class LandingPage extends BasePage {
     public void openLoginLink() {
         waitUntilClick(loginLink, 5);
     }
+
+    public void openSignUpLink() {waitUntilClick(signUpLink, 5);}
 
 }

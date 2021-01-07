@@ -9,9 +9,9 @@
         </classes>
     </test>
 
-    <test name="SignUpTest">
+    <test name="ProfilePageTest">
         <classes>
-            <class name="SignUpTest" />
+            <class name="ProfilePageTest" />
         </classes>
     </test>
   </suite>

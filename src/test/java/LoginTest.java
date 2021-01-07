@@ -29,7 +29,7 @@ public class LoginTest extends BaseScript {
 
     @AfterTest
     public void closeBrowser() {
-        driver.close();
+        driver.quit();
     }
 
 }

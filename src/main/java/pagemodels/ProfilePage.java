@@ -10,21 +10,20 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ProfilePage extends BasePage {
-    DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    DateFormat dateFormat = new SimpleDateFormat("d MMMMM yyyy");
     Date date = new Date();
 
 
     public ProfilePage(WebDriver driver) {super(driver);}
 
-    String ExpectedWelcomeText ="Hi, Demo User";
-    String expectedlDate = dateFormat.format(date);
 
-    private By WelcomeText = By.xpath("/html/body/div/div[1]/div[1]/div/div/div[1]/div/div[2]/h3");
+    String expectedDate = dateFormat.format(date);
+
+
     private By actualDate = By.xpath("/html/body/div/div[1]/div[1]/div/div/div[2]/div/span");
     private By clickInvoice = By.xpath("//*[@id=\"bookings\"]/div[2]/div[4]/a");
 
-    public void verifiedWelcomeText(){Assert.assertEquals(driver.findElement(WelcomeText),ExpectedWelcomeText);}
-    public void verifiedDate(){Assert.assertEquals(driver.findElement(actualDate),expectedlDate);}
+    public void verifiedDate(){Assert.assertEquals(driver.findElement(actualDate).getText(),expectedDate);}
     public void submitInvoice()  { waitUntilClick(clickInvoice,5);}
 
 

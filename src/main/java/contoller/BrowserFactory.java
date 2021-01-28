@@ -54,6 +54,7 @@ public class BrowserFactory {
             caps.setCapability("browser", "Chrome");
             caps.setCapability("browser_version", "86.0");
             caps.setCapability("browserstack.local", "false");
+            caps.setCapability("resolution", "1920x1080");
             caps.setCapability("browserstack.selenium_version", "3.14.0");
             WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
             return driver;

@@ -8,5 +8,6 @@ public class TestData {
     public static final String FIRSTNAME = "user";
     public static final String LASTNAME =  "demouser";
     public static final String MOBILENUMBER = "1231231234";
+    public static final String RANDOMSIGNUPEMAIL = "user" + Math.random() + "@phptravels.com";
 
 }

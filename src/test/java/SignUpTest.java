@@ -2,6 +2,7 @@ import contoller.BaseScript;
 import contoller.TestData;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import pagemodels.AccountPage;
 import pagemodels.LandingPage;
 import pagemodels.LoginPage;
 import pagemodels.SignUpPage;
@@ -14,6 +15,7 @@ public class SignUpTest extends BaseScript {
         LandingPage landingPage = new LandingPage(driver);
         SignUpPage signUpPage = new SignUpPage(driver);
         LoginPage loginPage = new LoginPage(driver);
+        AccountPage accountPage = new AccountPage(driver);
 
         //toggling back and forth from MyAccountDropdown - signup to log in, and back to signup page
         landingPage.openHomePage();
@@ -63,8 +65,10 @@ public class SignUpTest extends BaseScript {
 
         // Fills all the Data to signup
         signUpPage.signUp(TestData.FIRSTNAME, TestData.LASTNAME,
-                TestData.MOBILENUMBER, TestData.USERNAME, TestData.PASSWORD,
+                TestData.MOBILENUMBER, TestData.RANDOMSIGNUPEMAIL, TestData.PASSWORD,
                 TestData.CONFIRMPASSWORD);
+
+        accountPage.verifyPage();
     }
 
     @AfterTest

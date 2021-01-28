@@ -16,7 +16,7 @@ public class SignUpPage extends BasePage{
     String expectedLandingPageTitle = "PHPTRAVELS | Travel Technology Partner";
 
     public void verifyLandingPageTitle() {
-        waitUntilTitle(expectedLandingPageTitle, 5);
+        waitUntilTitle(expectedLandingPageTitle, 10);
     }
 
     private By myAccountDropDown = By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
@@ -186,7 +186,9 @@ public class SignUpPage extends BasePage{
     }
 
     public void homeLinkClick(){
-        waitUntilClick(homeLink,5);
+        waitUntilClick(homeLink,20);
+        click(homeLink);
+
     }
 
     public void signUp(String firstName, String lastName , String mobileNumber, String email, String password, String confirmPassword) {

@@ -38,6 +38,9 @@ public class BasePage {
         (new WebDriverWait(driver, secs))
                 .until(ExpectedConditions.titleIs(title));
     }
+    protected void click(By locator) {
+        find(locator).click();
+    }
 
 
 

@@ -23,6 +23,7 @@ public class ProfilePage extends BasePage {
     private By actualDate = By.xpath("/html/body/div/div[1]/div[1]/div/div/div[2]/div/span");
     private By clickInvoice = By.xpath("//*[@id=\"bookings\"]/div[2]/div[4]/a");
 
+
     public void verifiedDate(){Assert.assertEquals(driver.findElement(actualDate).getText(),expectedDate);}
     public void submitInvoice()  { waitUntilClick(clickInvoice,5);}
 

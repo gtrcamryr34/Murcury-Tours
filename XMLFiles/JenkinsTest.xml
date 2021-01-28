@@ -9,7 +9,13 @@
         </classes>
     </test>
 
-    <test name="ProfilePageTest">
+    <test name="Sign Up Test">
+    <classes>
+        <class name="SignUpTest" />
+    </classes>
+    </test>
+
+    <test name="Profile Page Test">
         <classes>
             <class name="ProfilePageTest" />
         </classes>

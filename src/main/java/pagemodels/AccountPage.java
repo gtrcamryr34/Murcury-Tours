@@ -13,6 +13,6 @@ public class AccountPage extends BasePage {
     String expectedTitle = "My Account";
 
     public void verifyPage(){
-        waitUntilTitle(expectedTitle, 10);
+        waitUntilTitle(expectedTitle, 30);
     }
 }

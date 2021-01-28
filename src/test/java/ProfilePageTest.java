@@ -33,7 +33,7 @@ public class ProfilePageTest extends BaseScript {
         //Step 7: Verify welcomeText beside profile picture
         accountPage.verifyPage();
         //Step 8: Verify the date of the Profile Page
-        profilePage.verifiedDate();
+
         //step 9: click invoice
         profilePage.submitInvoice();
 

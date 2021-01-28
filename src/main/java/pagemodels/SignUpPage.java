@@ -186,7 +186,7 @@ public class SignUpPage extends BasePage{
     }
 
     public void homeLinkClick(){
-        waitUntilClick(homeLink,20);
+        waitUntilClick(homeLink,60);
         click(homeLink);
 
     }

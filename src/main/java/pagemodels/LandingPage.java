@@ -13,7 +13,7 @@ public class LandingPage extends BasePage {
     String expectedPageTitle = "PHPTRAVELS | Travel Technology Partner";
     String expectedLoginTitle = "Login";
 
-    String pageUrl = "https://www.phptravels.net/home";
+    String pageUrl = "https://www.phptravels.net/";
 
     private By myAccountDropDown =  By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
     private By loginLink = By.linkText("Login");

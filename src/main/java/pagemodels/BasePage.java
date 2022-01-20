@@ -19,22 +19,22 @@ public class BasePage {
         return driver.findElement(locator);
     }
 
+    //This will open a page using the URL tht is passed when using the method
     protected void openPage(String url) {
         driver.get(url);
     }
 
+    //This function translates to "Wait until element is clickable and then Click"
     protected void waitUntilClick(By locator, int secs) {
-        //This function translates to "Wait until element is clickable and then Click"
         (new WebDriverWait(driver, secs))
                 .until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
-
+    //Type Method will type for us using Locator and Text we pass from usage
     protected void type(By locator, String text){
         find(locator).sendKeys(text);
     }
-
+    //This function translates to "Wait until title is displayed as given title"
     protected void waitUntilTitle(String title, int secs) {
-        //This function translates to "Wait until title is displayed as given title"
         (new WebDriverWait(driver, secs))
                 .until(ExpectedConditions.titleIs(title));
     }

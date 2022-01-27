@@ -11,20 +11,13 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    String expectedLoginTitle = "Login";
+    String expectedLoginTitle = "Log in | Ultra Photobooth";
 
-    private By emailElement = By.name("username");
-    private By passwordElement = By.name("password");
-    private By loginButton = By.xpath("//*[@id=\"loginfrm\"]/button");
-
-    private By signUpLink = By.linkText("Sign Up");
-    public void openSignUpLink() {waitUntilClick(signUpLink, 5);}
+    private By emailElement = By.name("user[email]");
+    private By passwordElement = By.name("user[password]");
+    private By loginButton = By.xpath("//*[@id=\"new_user\"]/div[2]/input");
 
 
-    public void openMyAccount()  {
-        waitUntilClick(myAccountDropDown, 5);
-    }
-    private By myAccountDropDown =  By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
 
 
     public void verifyLoginPage() {

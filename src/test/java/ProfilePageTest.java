@@ -24,7 +24,6 @@ public class ProfilePageTest extends BaseScript {
         //Step 1 & 2 Open the chrome browser and Type the address "https://phptravels.net/home  " and hit enter
         landingPage.openHomePage();
         //Step 3: Click on "MY ACCOUNT"
-        landingPage.openMyAccount();
         //Step 4: Click on "LOGIN"
         landingPage.openLoginLink();
         //Step 5&6: Type the credentials in their respective boxes

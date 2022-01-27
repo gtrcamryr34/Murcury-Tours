@@ -19,12 +19,8 @@ public class SignUpTest extends BaseScript {
 
         //toggling back and forth from MyAccountDropdown - signup to log in, and back to signup page
         landingPage.openHomePage();
-        landingPage.openMyAccount();
         landingPage.openSignUpLink();
-        signUpPage.openMyAccount();
         signUpPage.openLoginLink();
-        loginPage.openMyAccount();
-        loginPage.openSignUpLink();
 
         // Verifies the page
         signUpPage.verifySignUpPageTitle();
@@ -46,7 +42,6 @@ public class SignUpTest extends BaseScript {
         signUpPage.homeLinkClick();
         signUpPage.verifyLandingPageTitle();
 
-        landingPage.openMyAccount();
         landingPage.openSignUpLink();
 
         signUpPage.verifySignUpPageTitle();

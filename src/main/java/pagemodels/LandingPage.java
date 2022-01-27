@@ -10,14 +10,17 @@ public class LandingPage extends BasePage {
     public LandingPage(WebDriver driver) {
         super(driver);
     }
-    String expectedPageTitle = "PHPTRAVELS | Travel Technology Partner";
+    String expectedPageTitle = "Photobooth In Edison NJ | Photo Booth Rental NJ |Ultra PhotoBooth";
     String expectedLoginTitle = "Login";
+    String expectedFBTitle = "Ultra Photobooth";
+    String expectedIATitle = "Login • Instagram";
 
-    String pageUrl = "https://www.phptravels.net/";
+    String pageUrl = "https://www.ultraphotobooth.com";
 
-    private By myAccountDropDown =  By.xpath("/html/body/div[2]/header/div[1]/div/div/div[2]/div/ul/li[3]/div/a");
-    private By loginLink = By.linkText("Login");
-    private By signUpLink = By.linkText("Sign Up");
+    private By portalLoginLink = By.linkText("CLIENT PORTAL SIGN IN");
+    private By bookNow = By.xpath("//*[@id=\"pc\"]/body/section[1]/div/div/a/div/div/p/span/span");
+    private By instagramBtn = By.xpath("//*[@id=\"pc\"]/body/header/div/div/a[1]/div/svg");
+    private By facebookBtn = By.xpath("//*[@id=\"1dd01e78-3631-4d98-ac55-305a69b77dd6\"]/path[1]");
 
     public void openHomePage() {
         openPage(pageUrl);
@@ -25,14 +28,17 @@ public class LandingPage extends BasePage {
         Assert.assertEquals(actualTitle, expectedPageTitle);
     }
 
-    public void openMyAccount()  {
-        waitUntilClick(myAccountDropDown, 5);
-    }
-
     public void openLoginLink() {
-        waitUntilClick(loginLink, 5);
+        waitUntilClick(portalLoginLink, 5);
     }
 
-    public void openSignUpLink() {waitUntilClick(signUpLink, 5);}
+    public void verifyFacebookLink() {
+        waitUntilClick(instagramBtn, 5);
+        waitUntilTitle(expectedFBTitle, 5);
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedFBTitle);
+    }
+
+    public void openSignUpLink() {waitUntilClick(bookNow, 5);}
 
 }

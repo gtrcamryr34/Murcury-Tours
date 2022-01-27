@@ -37,7 +37,7 @@ public class LoginTest extends BaseScript {
 
     @AfterTest
     public void closeBrowser() throws Exception {
-        //driver.quit();
+        driver.quit();
     }
 
 }

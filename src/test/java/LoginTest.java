@@ -21,8 +21,11 @@ public class LoginTest extends BaseScript {
         //Step 4: Click on "LOGIN"
         landingPage.openLoginLink();
         //Step 5&6: Type the credentials in their respective boxes
+        loginPage.verifyLoginPage();
+
         loginPage.login(TestData.USERNAME, TestData.PASSWORD);
         //BONUS STEP: Verify Account Page
+        loginPage.loginFailMessage();
     }
 
     @Test
@@ -34,7 +37,7 @@ public class LoginTest extends BaseScript {
 
     @AfterTest
     public void closeBrowser() throws Exception {
-        driver.quit();
+        //driver.quit();
     }
 
 }

@@ -13,10 +13,10 @@ public class BaseScript {
     public static final String browserStack = "remote";
     public static final String jenkins = "jenkins";
     // PARAMETERS IS SET FROM THE XMLFILES FILES, WHICH DECIDES WHAT BROWSER TYPE TO RUN, IF NON IS GIVEN THEN CODE WILL RUN THE LOCAL SETTING WITH @OPTIONAL
-    @Parameters({ "remote" })
+    @Parameters({ "chrome" })
     @BeforeMethod(alwaysRun = true)
     //  ALWAYS CHANGE THE BROWSER TO WHERE YOU WANT TO RUN IT
-    public void setUp(@Optional(browserStack)String browser) throws Exception {
+    public void setUp(@Optional(chrome)String browser) throws Exception {
         //THIS IS SETTING UP NEW DRIVER TO ALWAYS CALL BROWSERFACTORY FOR DRIVER CONFIG
         BrowserFactory factory = new BrowserFactory(browser);
         driver = factory.createDriver();
